@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="ru.mkr.dbwiz.frames.ProjectFrame">
+  <grid id="27dc6" binding="rootPanel" layout-manager="BorderLayout" hgap="0" vgap="0">
+    <constraints>
+      <xy x="20" y="20" width="500" height="400"/>
+    </constraints>
+    <properties/>
+    <border type="empty">
+      <size top="5" left="5" bottom="5" right="5"/>
+    </border>
+    <children>
+      <grid id="65d63" layout-manager="BorderLayout" hgap="0" vgap="0">
+        <constraints border-constraint="South"/>
+        <properties/>
+        <border type="none"/>
+        <children>
+          <component id="df7ea" class="javax.swing.JSeparator">
+            <constraints border-constraint="North"/>
+            <properties/>
+          </component>
+          <grid id="19c8d" layout-manager="BorderLayout" hgap="0" vgap="5">
+            <constraints border-constraint="Center"/>
+            <properties/>
+            <border type="empty">
+              <size top="5" left="0" bottom="0" right="0"/>
+            </border>
+            <children>
+              <component id="94af2" class="javax.swing.JProgressBar" binding="progressBar">
+                <constraints border-constraint="Center"/>
+                <properties>
+                  <indeterminate value="true"/>
+                  <value value="0"/>
+                </properties>
+              </component>
+              <component id="452ff" class="javax.swing.JButton" binding="button">
+                <constraints border-constraint="South"/>
+                <properties>
+                  <text value="Прервать выполнение проекта"/>
+                </properties>
+              </component>
+              <component id="bd1af" class="javax.swing.JLabel" binding="statusLabel">
+                <constraints border-constraint="North"/>
+                <properties>
+                  <horizontalAlignment value="0"/>
+                  <horizontalTextPosition value="0"/>
+                  <text value="Инициализация..."/>
+                </properties>
+              </component>
+            </children>
+          </grid>
+        </children>
+      </grid>
+      <scrollpane id="cf428">
+        <constraints border-constraint="Center"/>
+        <properties/>
+        <border type="none"/>
+        <children>
+          <component id="3c4af" class="javax.swing.JTextArea" binding="logArea">
+            <constraints/>
+            <properties/>
+          </component>
+        </children>
+      </scrollpane>
+    </children>
+  </grid>
+</form>
